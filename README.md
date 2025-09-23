@@ -56,7 +56,7 @@ docker exec -it postgis_container psql -U pgadmin -d osm_switzerland -c "\l"
 docker exec -it postgis_container bash
 
 # Run the following code in bash (change user name and password if required)
-PGPASSWORD=geheim osm2pgsql -c -d osm_switzerland -U pgadmin -H db -P 5432 -S /usr/bin/default.style /tmp/switzerland-latest.osm.pbf
+PGPASSWORD=geheim osm2pgsql -c -d osm_switzerland -U pgadmin -H db -P 5432 -S /usr/bin/default.style /tmp/zurich-latest.osm.pbf
 
 # Exit bash
 exit
