@@ -46,11 +46,8 @@ Password: geheim
 In VS Code -> Terminal, use the following Docker commands to insert OpenStreetMap data into the PostgreSQL database.
 
 ```bash
-# Show running containers
+# Show running Docker containers
 docker ps
-
-# Show available databases
-docker exec -it postgis_container psql -U pgadmin -d osm_switzerland -c "\l"
 
 # Open bash and run osm2pgsql commands to fill up OpenStreetMap tables
 docker exec -it postgis_container bash
