@@ -8,4 +8,4 @@ FROM planet_osm_polygon
 WHERE 
     boundary = 'administrative' 
     AND admin_level = '8'
-    -- AND name IN ('Winterthur', 'St. Gallen', 'Lugano', 'Biel/Bienne');
+    -- AND name IN ('Winterthur', 'Zürich');
