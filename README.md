@@ -8,6 +8,7 @@
 - [Import OSM data](#import-osm-data)
 - [Register Server](#register-server)
 - [Make SQL Queries](#make-sql-queries)
+- [Known Issues and How to fix them](#known-issues-and-how-to-fix-them)
 
 ## File structure
 ```bash
@@ -17,7 +18,8 @@ Project/
 │   └── devcontainer.json
 |   └── servers.json
 │
-├── SQL
+├── SQL/
+├── SQL_EXTENDED/
 ├── default.style
 ├── docker-compose.yml
 ├── Dockerfile
@@ -108,3 +110,14 @@ WHERE
 ```
 
 **Tip: If you click on the flag symbol in the 'geom' column of the results table, you can visualize the spatial data in pgAdmin.**
+
+## Known Issues and How to fix them
+```bash
+1.) Maps are not displayed in Jupyter Notebooks.
+- This is a known bug related to the rendering of Jupyter Notebook content.
+- You should save, close, and reopen your Jupyter Notebook, then it should work.
+
+2.) SQL queries are empty.
+- Check that your SQL query is correct, e.g., using pgadmin4.
+- Make sure that the OpenStreetMap data has been imported into the database (see README file).
+```
