@@ -118,6 +118,6 @@ WHERE
 - You should save, close, and reopen your Jupyter Notebook, then it should work.
 
 2.) SQL queries are empty.
-- Check that your SQL query is correct, e.g., using pgadmin4.
 - Make sure that the OpenStreetMap data has been imported into the database (see README file).
+- Check that your SQL query is correct, e.g., using pgadmin4.
 ```
