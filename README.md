@@ -114,7 +114,7 @@ WHERE
 ## Known Issues and How to fix them
 ```bash
 1.) Maps are not displayed in Jupyter Notebooks.
-- This is a known bug related to the rendering of Jupyter Notebook content.
+- This is a known bug related to the rendering of the Jupyter Notebook content.
 - You should save, close, and reopen your Jupyter Notebook, then it should work.
 
 2.) SQL queries are empty.
