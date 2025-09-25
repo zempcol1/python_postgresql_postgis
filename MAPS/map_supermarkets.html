@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cadb008b16aa61373e166536032eb0ab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cadb008b16aa61373e166536032eb0ab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cadb008b16aa61373e166536032eb0ab = L.map(
+                "map_cadb008b16aa61373e166536032eb0ab",
+                {
+                    center: [47.50009464550818, 8.724396472727271],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_572198d7afa731620cf2aade8c64ca64 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_572198d7afa731620cf2aade8c64ca64.addTo(map_cadb008b16aa61373e166536032eb0ab);
+        
+    
+
+        function geo_json_9fea7c233c3b8cabde5f651226b8602c_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_9fea7c233c3b8cabde5f651226b8602c = L.geoJson(null, {
+                onEachFeature: geo_json_9fea7c233c3b8cabde5f651226b8602c_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_9fea7c233c3b8cabde5f651226b8602c_add (data) {
+            geo_json_9fea7c233c3b8cabde5f651226b8602c
+                .addData(data);
+        }
+            geo_json_9fea7c233c3b8cabde5f651226b8602c_add({"bbox": [8.719137299999998, 47.497901300054146, 8.732985899999997, 47.50441840005266], "features": [{"bbox": [8.725937799999999, 47.500848300053455, 8.725937799999999, 47.500848300053455], "geometry": {"coordinates": [8.725937799999999, 47.500848300053455], "type": "Point"}, "id": "0", "properties": {"distance_meters": 159.88341889, "name": "Coop", "osm_id": 706203439, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.722078199999999, 47.50100990005341, 8.722078199999999, 47.50100990005341], "geometry": {"coordinates": [8.722078199999999, 47.50100990005341], "type": "Point"}, "id": "1", "properties": {"distance_meters": 162.39128099, "name": "Asia Shop", "osm_id": 4109460421, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.721153199999998, 47.499163300053844, 8.721153199999998, 47.499163300053844], "geometry": {"coordinates": [8.721153199999998, 47.499163300053844], "type": "Point"}, "id": "2", "properties": {"distance_meters": 247.57820785, "name": "Migros", "osm_id": 3831772784, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.7207353, 47.49958100005376, 8.7207353, 47.49958100005376], "geometry": {"coordinates": [8.7207353, 47.49958100005376], "type": "Point"}, "id": "3", "properties": {"distance_meters": 256.83801124, "name": "Alnatura", "osm_id": 7380954145, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.7247563, 47.497901300054146, 8.7247563, 47.497901300054146], "geometry": {"coordinates": [8.7247563, 47.497901300054146], "type": "Point"}, "id": "4", "properties": {"distance_meters": 274.27539294, "name": "ALDI", "osm_id": 4095400190, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.7201688, 47.500732100053476, 8.7201688, 47.500732100053476], "geometry": {"coordinates": [8.7201688, 47.500732100053476], "type": "Point"}, "id": "5", "properties": {"distance_meters": 290.21266361, "name": "Tandoor Indischer Supermarkt", "osm_id": 4125136758, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.7203601, 47.49885680005391, 8.7203601, 47.49885680005391], "geometry": {"coordinates": [8.7203601, 47.49885680005391], "type": "Point"}, "id": "6", "properties": {"distance_meters": 316.35403748, "name": "Denner", "osm_id": 4095400136, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.729118299999998, 47.49842050005401, 8.729118299999998, 47.49842050005401], "geometry": {"coordinates": [8.729118299999998, 47.49842050005401], "type": "Point"}, "id": "7", "properties": {"distance_meters": 441.12931746, "name": "Claro Weltladen", "osm_id": 709022324, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.719137299999998, 47.50441840005266, 8.719137299999998, 47.50441840005266], "geometry": {"coordinates": [8.719137299999998, 47.50441840005266], "type": "Point"}, "id": "8", "properties": {"distance_meters": 584.13118132, "name": "Denner", "osm_id": 359694887, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.73193, 47.50011670005362, 8.73193, 47.50011670005362], "geometry": {"coordinates": [8.73193, 47.50011670005362], "type": "Point"}, "id": "9", "properties": {"distance_meters": 600.11730735, "name": "Migros", "osm_id": 4058248551, "shop": "supermarket"}, "type": "Feature"}, {"bbox": [8.732985899999997, 47.49999280005366, 8.732985899999997, 47.49999280005366], "geometry": {"coordinates": [8.732985899999997, 47.49999280005366], "type": "Point"}, "id": "10", "properties": {"distance_meters": 680.20296098, "name": "L\u0027Ultimo Bacio", "osm_id": 3441033104, "shop": "supermarket"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_9fea7c233c3b8cabde5f651226b8602c.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_9fea7c233c3b8cabde5f651226b8602c.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["name", "distance_meters"];
+    let aliases = ["name", "distance_meters"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_9fea7c233c3b8cabde5f651226b8602c.addTo(map_cadb008b16aa61373e166536032eb0ab);
+        
+    
+            var layer_control_c03d11fc48319570f1d2a0bac0df57b5_layers = {
+                base_layers : {
+                    "esriworldimagery" : tile_layer_572198d7afa731620cf2aade8c64ca64,
+                },
+                overlays :  {
+                    "map" : geo_json_9fea7c233c3b8cabde5f651226b8602c,
+                },
+            };
+            let layer_control_c03d11fc48319570f1d2a0bac0df57b5 = L.control.layers(
+                layer_control_c03d11fc48319570f1d2a0bac0df57b5_layers.base_layers,
+                layer_control_c03d11fc48319570f1d2a0bac0df57b5_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_cadb008b16aa61373e166536032eb0ab);
+
+        
+</script>
+</html>
