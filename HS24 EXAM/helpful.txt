@@ -1,0 +1,35 @@
+Tile Layer Options
+- EsriWorldImagery
+- EsriWorldTopoMap
+- EsriWorldGrayCanvas
+- CartoDBDarkMatter (CartoDB dark_matter)
+- CartoDBPositron (CartoDB positron)
+
+Coordinates of Zurich POIs (Get via: https://tools.retorte.ch/map/)
+ST_makepoint: small number first, MarkerCluster & Markers: big number first
+- (8.540192, 47.378177, "Zurich main station),
+- (8.72397, 47.50031), "Winterthur main station),
+- (47.3686, 8.5392, "Town Hall"),
+- (47.3717, 8.5423, "ETH Zurich"),
+- (47.3642, 8.5490, "University Hospital"),
+- (47.3817, 8.5210, "Museum of Design"),
+- (47.3890, 8.5170, "Letzigrund Stadium")
+
+Transformations for ST_Transform:
+- 4326 : Längen-/Breitengrade in Grad
+- 3857 : Mercator in Meter (leicht verzerrt)
+
+Einfache Geometrie-Berechnungen (Nur sinnvoll in metrischem CRS)
+Distanz: ST_Distance(a, b)
+Länge: ST_Length(geom)
+Fläche: ST_Area(geom)
+
+Geometrische Beziehungen
+ST_Intersects(a, b) – schneiden sich?
+ST_Within(a, b) – liegt A in B?
+ST_Contains(a, b) – enthält B das A?
+
+Geometrien manipulieren
+ST_Buffer(geom, 1000) – Umkreis (z.B. 1000 m) (Nur sinnvoll in metrischem CRS)
+ST_Union(geom1, geom2) – Flächen verschmelzen
+ST_Intersection(geom1, geom2) – Schnittmenge
